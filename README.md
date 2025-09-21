@@ -125,3 +125,5 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 *Se este projeto foi útil, considere dar uma ⭐!*
+
+Autor Lucas Teixeira
