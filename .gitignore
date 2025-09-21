@@ -1,0 +1,22 @@
+# Dependências
+node_modules/
+npm-debug.log*
+
+# Arquivos de sessão do WhatsApp (contém dados sensíveis)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

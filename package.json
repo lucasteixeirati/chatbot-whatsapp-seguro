@@ -1,0 +1,18 @@
+{
+  "name": "@lucas/chatbot-whatsapp",
+  "version": "1.0.0",
+  "description": "Bot simples e seguro para WhatsApp",
+  "main": "robo.js",
+  "private": true,
+  "scripts": {
+    "start": "node robo.js",
+    "dev": "node robo.js"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.25.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
