@@ -21,13 +21,6 @@ Bot completo para WhatsApp com **foco em segurança** e **recursos comerciais av
 
 ## 🚀 Recursos
 
-### Versão Básica
-- ✅ **Respostas automáticas** por palavras-chave
-- ✅ **Validação de entrada** segura
-- ✅ **Autenticação local** persistente
-- ✅ **Logs de segurança** completos
-
-### Versão Comercial
 - 💼 **Sistema completo de vendas**
 - 👥 **Captura e gestão de leads**
 - 📊 **Analytics avançado** com métricas
@@ -101,45 +94,6 @@ npm run commercial
 - `4` - Falar com atendente humano
 - `contato` - Informações de contato
 - `!stats` - Estatísticas do bot
-
-### Exemplo de Interação Comercial
-```
-Usuário: oi
-Bot: Olá João! 👋
-
-     Seja bem-vindo(a)! Sou seu assistente virtual.
-     
-     📋 Menu Principal:
-     
-     💼 Demonstrações por Profissão:
-     🦷 5 - Dentista
-     👩⚕️ 6 - Médico
-     ⚖️ 7 - Advogado
-     🧠 8 - Psicólogo
-     🏃♂️ 9 - Fisioterapeuta
-     🏗️ 0 - Engenheiro
-     
-     Digite o número da opção desejada!
-
-Usuário: 5
-Bot: [Envia imagem + texto do dentista]
-     🦷 Dr. Carlos Silva - Odontologia
-     
-     👨⚕️ CRO-SP 12345
-     📍 Vila Madalena - São Paulo
-     ⭐ 15 anos de experiência
-     
-     📞 Contatos:
-     📱 (11) 99999-1234
-     📧 contato@drcarlossilva.com.br
-     
-     💰 Serviços:
-     • Limpeza Dental - R$ 120
-     • Clareamento - R$ 450
-     • Implante Dentário - R$ 2500
-     
-     📱 Agende sua consulta!
-```
 
 ## 💼 Funcionalidades Comerciais
 
@@ -215,17 +169,6 @@ chatbot-whatsapp-seguro/
 - 🤖 Processamento de linguagem natural
 - 🎯 Recomendações personalizadas
 - 📈 Previsão de vendas
-
-**4. Multi-canal:**
-- 📱 Instagram, Telegram, Facebook
-- 🌐 Integração com site/e-commerce
-- 📞 Central de atendimento
-
-### Modelos de Monetização
-- 💰 **SaaS** - Venda como serviço
-- 🏢 **White Label** - Licenciamento
-- 🎯 **Consultoria** - Implementação personalizada
-- 📈 **Comissões** - Parcerias estratégicas
 
 ## 🔒 Segurança
 
