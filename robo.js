@@ -1,6 +1,22 @@
 const qrcode = require('qrcode-terminal');
-const { Client, Buttons, List, MessageMedia } = require('whatsapp-web.js');
-const client = new Client();
+const { Client, LocalAuth } = require('whatsapp-web.js');
+
+// Cliente com configurações de segurança aprimoradas
+const client = new Client({
+    authStrategy: new LocalAuth(),
+    puppeteer: {
+        headless: true,
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--no-first-run',
+            '--no-zygote',
+            '--disable-gpu'
+        ]
+    }
+});
 
 client.on('qr', qr => {
     qrcode.generate(qr, {small: true});
@@ -30,6 +46,15 @@ const responses = {
     }
 };
 
+// Função para validar entrada de forma segura
+function validateInput(input) {
+    if (!input || typeof input !== 'string') return false;
+    if (input.length > 1000) return false; // Limite de tamanho
+    // Remove caracteres potencialmente perigosos
+    const sanitized = input.replace(/[<>"'&]/g, '');
+    return sanitized.toLowerCase().trim();
+}
+
 // Função para obter nome do contato de forma segura
 function getContactName(contact) {
     if (contact.pushname && typeof contact.pushname === 'string') {
@@ -53,11 +78,12 @@ function findResponse(userInput) {
 
 client.on('message', async msg => {
     try {
-        // Validação de entrada - previne injeção de código
+        // Validação rigorosa de entrada
         if (!msg.body || typeof msg.body !== 'string') return;
         if (!msg.from.endsWith('@c.us')) return;
         
-        const userInput = msg.body.toLowerCase().trim();
+        const userInput = validateInput(msg.body);
+        if (!userInput) return; // Input inválido
         
         // Busca resposta apropriada
         const responseData = findResponse(userInput);
@@ -76,6 +102,8 @@ client.on('message', async msg => {
             await client.sendMessage(msg.from, message);
         }
     } catch (error) {
-        console.error('Erro ao processar mensagem:', error.message);
+        // Log completo do erro para debugging
+        console.error('Erro ao processar mensagem:', error);
+        console.error('Stack trace:', error.stack);
     }
 });

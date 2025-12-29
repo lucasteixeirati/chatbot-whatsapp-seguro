@@ -6,11 +6,13 @@
   "private": true,
   "scripts": {
     "start": "node robo.js",
-    "dev": "node robo.js"
+    "dev": "node robo.js",
+    "commercial": "node bot-comercial.js",
+    "report": "node -e \"const Analytics = require('./src/analytics'); const a = new Analytics(); a.loadMetrics(); console.log(JSON.stringify(a.generateReport(), null, 2));\""
   },
   "dependencies": {
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.25.0"
+    "whatsapp-web.js": "^1.26.0"
   },
   "engines": {
     "node": ">=16.0.0"
