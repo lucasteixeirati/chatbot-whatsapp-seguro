@@ -20,12 +20,10 @@ Bot completo para WhatsApp com **foco em segurança** e **recursos comerciais av
 
 | Versão | Comando | Descrição |
 |--------|---------|----------|
-| **Básica** | `npm start` | Bot simples com respostas básicas |
-| **Comercial** | `npm run commercial` | Sistema completo de vendas (original) |
-| **Comercial v2** | `npm run commercial:v2` | **Nova versão modular e otimizada** |
+| **Comercial** | `npm start` | Sistema completo de vendas (recomendado) |
 | **Teste** | `npm run test` | Bot para testes e debug |
 
-> 🚀 **Recomendado**: Use `npm run commercial:v2` para a versão mais recente e otimizada!
+> 🚀 **Principal**: `npm start` executa a versão comercial otimizada!
 
 ## 🛠 Instalação Rápida
 
@@ -37,8 +35,8 @@ cd chatbot-whatsapp-seguro
 # 2. Instale dependências
 npm install
 
-# 3. Execute (recomendado: versão comercial)
-npm run commercial
+# 3. Execute o bot comercial
+npm start
 
 # 4. Escaneie o QR Code no terminal
 ```
@@ -100,10 +98,8 @@ chatbot-whatsapp-seguro/
 │       └── menu.json           # Estrutura do menu
 ├── assets/images/          # Imagens dos profissionais
 ├── database/               # Dados de analytics
-├── bot-comercial.js        # Bot original
-├── bot-comercial-v2.js     # **Nova versão modular**
+├── bot-comercial-v2.js     # Bot comercial principal
 ├── bot-teste.js            # Bot para testes
-└── robo.js                 # Bot básico
 ```
 
 ## 🎯 Casos de Uso
@@ -119,11 +115,9 @@ chatbot-whatsapp-seguro/
 ## 📊 Comandos Úteis
 
 ```bash
-# Executar versões
-npm start              # Básica
-npm run commercial     # Comercial original
-npm run commercial:v2  # 🎆 Nova versão modular (recomendado)
-npm run test          # Teste
+# Executar bot
+npm start              # Comercial (principal)
+npm run test          # Teste e debug
 
 # Relatórios e stats
 npm run report         # Relatório de performance
