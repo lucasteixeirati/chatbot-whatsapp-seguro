@@ -1,0 +1,110 @@
+{
+  "dentista": {
+    "id": "dentista",
+    "name": "Dr. Carlos Silva",
+    "specialty": "Odontologia",
+    "registration": "CRO-SP 12345",
+    "phone": "(11) 99999-1234",
+    "email": "contato@drcarlossilva.com.br",
+    "address": "Rua das Flores, 123 - Vila Madalena, São Paulo",
+    "services": [
+      { "name": "Limpeza Dental", "price": "120.00" },
+      { "name": "Clareamento", "price": "450.00" },
+      { "name": "Implante Dentário", "price": "2500.00" },
+      { "name": "Aparelho Ortodôntico", "price": "180.00" }
+    ],
+    "schedule": "Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h",
+    "banner": "🦷 *Dr. Carlos Silva - Odontologia*\n\n👨⚕️ CRO-SP 12345\n📍 Vila Madalena - São Paulo\n⭐ 15 anos de experiência\n\n🔹 Especialista em Implantes\n🔹 Ortodontia Moderna\n🔹 Clareamento a Laser\n🔹 Atendimento Humanizado",
+    "image": "dentista.jpg"
+  },
+  "medico": {
+    "id": "medico",
+    "name": "Dra. Ana Costa",
+    "specialty": "Clínica Geral",
+    "registration": "CRM-SP 67890",
+    "phone": "(11) 99999-5678",
+    "email": "dra.ana@clinicacosta.com.br",
+    "address": "Av. Paulista, 456 - Bela Vista, São Paulo",
+    "services": [
+      { "name": "Consulta Geral", "price": "200.00" },
+      { "name": "Check-up Completo", "price": "350.00" },
+      { "name": "Exames Laboratoriais", "price": "150.00" },
+      { "name": "Telemedicina", "price": "120.00" }
+    ],
+    "schedule": "Segunda a Sexta: 7h às 19h",
+    "banner": "👩⚕️ *Dra. Ana Costa - Clínica Geral*\n\n🏥 CRM-SP 67890\n📍 Av. Paulista - São Paulo\n⭐ 20 anos de experiência\n\n🔹 Medicina Preventiva\n🔹 Telemedicina Disponível\n🔹 Check-ups Executivos\n🔹 Atendimento Personalizado",
+    "image": "medico.jpg"
+  },
+  "advogado": {
+    "id": "advogado",
+    "name": "Dr. Roberto Lima",
+    "specialty": "Direito Civil e Trabalhista",
+    "registration": "OAB-SP 123456",
+    "phone": "(11) 99999-9012",
+    "email": "contato@robertolima.adv.br",
+    "address": "Rua Augusta, 789 - Consolação, São Paulo",
+    "services": [
+      { "name": "Consultoria Jurídica", "price": "300.00" },
+      { "name": "Ação Trabalhista", "price": "1500.00" },
+      { "name": "Divórcio Consensual", "price": "2000.00" },
+      { "name": "Revisão Contratual", "price": "500.00" }
+    ],
+    "schedule": "Segunda a Sexta: 9h às 18h",
+    "banner": "⚖️ *Dr. Roberto Lima - Advocacia*\n\n👨💼 OAB-SP 123456\n📍 Consolação - São Paulo\n⭐ 18 anos de experiência\n\n🔹 Direito Civil e Trabalhista\n🔹 Consultoria Empresarial\n🔹 Mediação e Arbitragem\n🔹 Atendimento Estratégico",
+    "image": "advogado.jpg"
+  },
+  "psicologo": {
+    "id": "psicologo",
+    "name": "Dra. Maria Santos",
+    "specialty": "Psicologia Clínica",
+    "registration": "CRP-SP 06/12345",
+    "phone": "(11) 99999-3456",
+    "email": "maria@psicologiasantos.com.br",
+    "address": "Rua dos Jardins, 321 - Jardins, São Paulo",
+    "services": [
+      { "name": "Terapia Individual", "price": "180.00" },
+      { "name": "Terapia de Casal", "price": "250.00" },
+      { "name": "Terapia Familiar", "price": "300.00" },
+      { "name": "Sessão Online", "price": "150.00" }
+    ],
+    "schedule": "Segunda a Sábado: 8h às 20h",
+    "banner": "🧠 *Dra. Maria Santos - Psicologia*\n\n👩⚕️ CRP-SP 06/12345\n📍 Jardins - São Paulo\n⭐ 12 anos de experiência\n\n🔹 Terapia Cognitivo-Comportamental\n🔹 Atendimento Online\n🔹 Especialista em Ansiedade\n🔹 Ambiente Acolhedor",
+    "image": "psicologo.jpg"
+  },
+  "fisioterapeuta": {
+    "id": "fisioterapeuta",
+    "name": "Dr. João Oliveira",
+    "specialty": "Fisioterapia Ortopédica",
+    "registration": "CREFITO-3 12345",
+    "phone": "(11) 99999-7890",
+    "email": "joao@fisiooliveira.com.br",
+    "address": "Rua da Saúde, 654 - Vila Mariana, São Paulo",
+    "services": [
+      { "name": "Sessão de Fisioterapia", "price": "120.00" },
+      { "name": "RPG", "price": "150.00" },
+      { "name": "Pilates Clínico", "price": "100.00" },
+      { "name": "Avaliação Postural", "price": "80.00" }
+    ],
+    "schedule": "Segunda a Sexta: 6h às 20h | Sábado: 8h às 14h",
+    "banner": "🏃♂️ *Dr. João Oliveira - Fisioterapia*\n\n👨⚕️ CREFITO-3 12345\n📍 Vila Mariana - São Paulo\n⭐ 10 anos de experiência\n\n🔹 Fisioterapia Ortopédica\n🔹 RPG e Pilates Clínico\n🔹 Reabilitação Esportiva\n🔹 Equipamentos Modernos",
+    "image": "fisioterapeuta.jpg"
+  },
+  "engenheiro": {
+    "id": "engenheiro",
+    "name": "Eng. Pedro Almeida",
+    "specialty": "Engenharia Civil",
+    "registration": "CREA-SP 123456789",
+    "phone": "(11) 99999-2468",
+    "email": "pedro@almeida.eng.br",
+    "address": "Av. Faria Lima, 987 - Itaim Bibi, São Paulo",
+    "services": [
+      { "name": "Projeto Estrutural", "price": "5000.00" },
+      { "name": "Laudo Técnico", "price": "800.00" },
+      { "name": "Consultoria Técnica", "price": "400.00" },
+      { "name": "Acompanhamento de Obra", "price": "200.00" }
+    ],
+    "schedule": "Segunda a Sexta: 8h às 17h",
+    "banner": "🏗️ *Eng. Pedro Almeida - Engenharia Civil*\n\n👨💼 CREA-SP 123456789\n📍 Itaim Bibi - São Paulo\n⭐ 15 anos de experiência\n\n🔹 Projetos Estruturais\n🔹 Laudos e Vistorias\n🔹 Consultoria Técnica\n🔹 Tecnologia BIM",
+    "image": "engenheiro.jpg"
+  }
+}

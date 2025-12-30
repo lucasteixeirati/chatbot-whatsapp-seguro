@@ -172,7 +172,7 @@ function getResponse(input, name, phoneNumber, isFirstInteraction = false) {
             ? `Olá ${name}! 👋\n\nSeja bem-vindo(a)! Sou seu assistente virtual.` 
             : 'Olá! 👋\n\nSou seu assistente virtual.';
         
-        return `${greeting}\n\n📋 *Menu Principal:*\n\n💼 *Demonstrações por Profissão:*\n🦷 5 - Dentista\n👩⚕️ 6 - Médico\n⚖️ 7 - Advogado\n🧠 8 - Psicólogo\n🏃♂️ 9 - Fisioterapeuta\n🏗️ 0 - Engenheiro\n\n🛍️ *Opções Gerais:*\n1️⃣ Nossos Produtos\n2️⃣ Fazer Pedido\n3️⃣ Suporte\n4️⃣ Falar com Atendente\n\nDigite o número da opção desejada!`;
+        return `${greeting}\n\n📋 *Menu Principal:*\n\n1️⃣ Nossos Produtos\n2️⃣ Fazer Pedido\n3️⃣ Suporte\n\n💼 *Demonstrações por Profissão:*\n4️⃣ Dentista\n5️⃣ Médico\n6️⃣ Advogado\n7️⃣ Psicólogo\n8️⃣ Fisioterapeuta\n9️⃣ Engenheiro\n\n0️⃣ Valores Bot WhatsApp\n\nDigite o número da opção desejada!`;
     }
     
     // Demonstrações dos profissionais
@@ -214,17 +214,12 @@ function getResponse(input, name, phoneNumber, isFirstInteraction = false) {
     // Pedidos (sem nome)
     if (userInput.includes('pedido') || userInput.includes('comprar') || userInput === '2') {
         analytics.conversions++;
-        return `🛒 *Fazer Pedido:*\n\nPara contratar nosso sistema:\n\n1. Escolha seu plano\n2. Informe seus dados\n3. Confirme o pagamento\n\n📱 Digite: *"Quero o plano mensal"*\n\nOu fale com nosso atendente digitando *"4"*`;
+        return `🛒 *Fazer Pedido:*\n\nPara contratar nosso sistema:\n\n1. Escolha seu plano\n2. Informe seus dados\n3. Confirme o pagamento\n\n📱 Digite: *"Quero o plano mensal"*\n\nOu digite *"0"* para ver nossos valores`;
     }
     
     // Suporte (sem nome)
     if (userInput.includes('suporte') || userInput.includes('ajuda') || userInput === '3') {
-        return `🆘 *Suporte Técnico:*\n\nEstou aqui para ajudar!\n\n❓ *Dúvidas Frequentes:*\n• Como personalizar o bot?\n• Formas de pagamento\n• Integração com sistemas\n• Suporte técnico\n\nDescreva sua dúvida ou digite *"4"* para falar com atendente humano.`;
-    }
-    
-    // Atendente (sem nome)
-    if (userInput.includes('atendente') || userInput.includes('humano') || userInput === '4') {
-        return `👨💼 *Transferindo para Atendente:*\n\nVocê será conectado com um de nossos atendentes em breve.\n\n⏰ Horário de atendimento:\n🕐 Segunda a Sexta: 8h às 18h\n\n*Aguarde um momento...*`;
+        return `🆘 *Suporte Técnico:*\n\nEstou aqui para ajudar!\n\n❓ *Dúvidas Frequentes:*\n• Como personalizar o bot?\n• Formas de pagamento\n• Integração com sistemas\n• Suporte técnico\n\nDescreva sua dúvida ou digite *"0"* para ver valores.`;
     }
     
     // Contato (sem nome)
@@ -233,7 +228,7 @@ function getResponse(input, name, phoneNumber, isFirstInteraction = false) {
     }
     
     // Resposta padrão (sem nome)
-    return `Não entendi sua mensagem. 🤔\n\nDigite *"menu"* para ver as opções disponíveis ou *"4"* para falar com atendente.`;
+    return `Não entendi sua mensagem. 🤔\n\nDigite *"menu"* para ver as opções disponíveis ou *"0"* para ver valores.`;
 }
 
 // Cliente WhatsApp
@@ -290,25 +285,31 @@ client.on('message', async msg => {
         // Delay
         await new Promise(resolve => setTimeout(resolve, 2000));
         
-        // Verifica se é demonstração de profissional (envia com imagem)
-        if (userInput === '5' || userInput.includes('dentista')) {
-            await sendProfessionalCard(msg, 'dentista');
-        }
-        else if (userInput === '6' || userInput.includes('medico') || userInput.includes('médico')) {
-            await sendProfessionalCard(msg, 'medico');
-        }
-        else if (userInput === '7' || userInput.includes('advogado')) {
-            await sendProfessionalCard(msg, 'advogado');
-        }
-        else if (userInput === '8' || userInput.includes('psicologo') || userInput.includes('psicólogo')) {
-            await sendProfessionalCard(msg, 'psicologo');
-        }
-        else if (userInput === '9' || userInput.includes('fisioterapeuta')) {
-            await sendProfessionalCard(msg, 'fisioterapeuta');
-        }
-        else if (userInput === '0' || userInput.includes('engenheiro')) {
-            await sendProfessionalCard(msg, 'engenheiro');
-        }
+    // Demonstrações dos profissionais (nova numeração)
+    if (userInput === '4' || userInput.includes('dentista')) {
+        await sendProfessionalCard(msg, 'dentista');
+    }
+    else if (userInput === '5' || userInput.includes('medico') || userInput.includes('médico')) {
+        await sendProfessionalCard(msg, 'medico');
+    }
+    else if (userInput === '6' || userInput.includes('advogado')) {
+        await sendProfessionalCard(msg, 'advogado');
+    }
+    else if (userInput === '7' || userInput.includes('psicologo') || userInput.includes('psicólogo')) {
+        await sendProfessionalCard(msg, 'psicologo');
+    }
+    else if (userInput === '8' || userInput.includes('fisioterapeuta')) {
+        await sendProfessionalCard(msg, 'fisioterapeuta');
+    }
+    else if (userInput === '9' || userInput.includes('engenheiro')) {
+        await sendProfessionalCard(msg, 'engenheiro');
+    }
+    // Valores Bot WhatsApp (novo item 0)
+    else if (userInput === '0' || userInput.includes('valores') || userInput.includes('preço')) {
+        const valoresResponse = `💰 *Valores Bot WhatsApp:*\n\n🤖 *Planos Disponíveis:*\n\n🎆 **Básico** - R$ 97/mês\n• 1 WhatsApp conectado\n• Menu personalizável\n• Respostas automáticas\n• Suporte por email\n\n🚀 **Profissional** - R$ 197/mês\n• 3 WhatsApps conectados\n• Sistema de leads\n• Analytics detalhado\n• Suporte prioritário\n\n🏆 **Enterprise** - R$ 397/mês\n• WhatsApps ilimitados\n• Customização completa\n• Integrações avançadas\n• Suporte 24/7\n\n📱 *Entre em contato para contratar!*`;
+        await msg.reply(valoresResponse);
+        console.log('💰 Valores enviados');
+    }
         else {
             // Para outras opções, usa a função normal
             const response = getResponse(msg.body, name, phoneNumber, isFirstInteraction);

@@ -1,0 +1,70 @@
+{
+  "mainMenu": {
+    "title": "📋 *Menu Principal:*",
+    "options": {
+      "1": {
+        "label": "Nossos Produtos",
+        "action": "products",
+        "emoji": "1️⃣"
+      },
+      "2": {
+        "label": "Fazer Pedido",
+        "action": "order",
+        "emoji": "2️⃣"
+      },
+      "3": {
+        "label": "Suporte",
+        "action": "support",
+        "emoji": "3️⃣"
+      }
+    }
+  },
+  "professionalMenu": {
+    "title": "💼 *Demonstrações por Profissão:*",
+    "options": {
+      "4": {
+        "label": "Dentista",
+        "action": "professional",
+        "professional": "dentista",
+        "emoji": "4️⃣"
+      },
+      "5": {
+        "label": "Médico",
+        "action": "professional",
+        "professional": "medico",
+        "emoji": "5️⃣"
+      },
+      "6": {
+        "label": "Advogado",
+        "action": "professional",
+        "professional": "advogado",
+        "emoji": "6️⃣"
+      },
+      "7": {
+        "label": "Psicólogo",
+        "action": "professional",
+        "professional": "psicologo",
+        "emoji": "7️⃣"
+      },
+      "8": {
+        "label": "Fisioterapeuta",
+        "action": "professional",
+        "professional": "fisioterapeuta",
+        "emoji": "8️⃣"
+      },
+      "9": {
+        "label": "Engenheiro",
+        "action": "professional",
+        "professional": "engenheiro",
+        "emoji": "9️⃣"
+      }
+    }
+  },
+  "specialOptions": {
+    "0": {
+      "label": "Valores Bot WhatsApp",
+      "action": "pricing",
+      "emoji": "0️⃣"
+    }
+  }
+}

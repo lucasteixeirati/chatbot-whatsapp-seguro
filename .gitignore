@@ -4,23 +4,40 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Dados de sessão do WhatsApp (NUNCA versionar)
+# Autenticação WhatsApp
 .wwebjs_auth/
 .wwebjs_cache/
 
-# Arquivos de ambiente
-.env
-.env.local
-.env.production
+# Dados sensíveis
+database/
+*.db
+*.sqlite
+*.json.bak
 
 # Logs
 logs/
 *.log
 
+# Ambiente
+.env
+.env.local
+.env.production
+
 # Sistema operacional
 .DS_Store
 Thumbs.db
 
-# IDE
+# IDEs
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Temporários
+tmp/
+temp/
+*.tmp
+
+# Build
+dist/
+build/

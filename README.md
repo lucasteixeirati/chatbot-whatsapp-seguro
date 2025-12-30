@@ -2,257 +2,171 @@
 
 [![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Security](https://img.shields.io/badge/Security-Hardened-brightgreen.svg)](#recursos-de-segurança)
-[![Commercial](https://img.shields.io/badge/Commercial-Ready-orange.svg)](#versão-comercial)
+[![Security](https://img.shields.io/badge/Security-Hardened-brightgreen.svg)](#segurança)
+[![Commercial](https://img.shields.io/badge/Commercial-Ready-orange.svg)](#funcionalidades-comerciais)
 
-Bot completo para WhatsApp com **foco em segurança** e **recursos comerciais avançados**. Inclui sistema de leads, vendas automatizadas, analytics e muito mais.
+Bot completo para WhatsApp com **foco em segurança** e **recursos comerciais avançados**. Sistema de leads, vendas automatizadas, analytics e demonstrações profissionais.
 
-## 📋 Índice
+## 🚀 Recursos Principais
 
-- [Recursos](#-recursos)
-- [Versões Disponíveis](#-versões-disponíveis)
-- [Instalação](#-instalação)
-- [Como Usar](#-como-usar)
-- [Funcionalidades Comerciais](#-funcionalidades-comerciais)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Expansão Comercial](#-expansão-comercial)
-- [Segurança](#-segurança)
-- [Contribuição](#-contribuição)
-
-## 🚀 Recursos
-
-- 💼 **Sistema completo de vendas**
-- 👥 **Captura e gestão de leads**
-- 📊 **Analytics avançado** com métricas
-- 🛍️ **Catálogo de produtos** interativo
-- 📱 **Menu comercial** profissional
-- 🎯 **Funil de vendas** automatizado
-- 📈 **Relatórios de performance**
-- 🏥 **Demonstrações por profissão** com imagens
-- 📸 **Cartões profissionais** personalizados
+- 💼 **Sistema completo de vendas** com captura de leads
+- 📊 **Analytics avançado** com métricas de conversão
+- 🏥 **Demonstrações profissionais** com imagens (6 especialidades)
+- 📱 **Menu comercial** interativo e personalizado
+- 🔒 **Segurança hardened** com validação rigorosa
+- 📈 **Relatórios de performance** em tempo real
 
 ## 📦 Versões Disponíveis
 
 | Versão | Comando | Descrição |
 |--------|---------|----------|
 | **Básica** | `npm start` | Bot simples com respostas básicas |
-| **Comercial** | `npm run commercial` | Sistema completo de vendas |
-| **Relatórios** | `npm run report` | Gera relatórios de performance |
+| **Comercial** | `npm run commercial` | Sistema completo de vendas (original) |
+| **Comercial v2** | `npm run commercial:v2` | **Nova versão modular e otimizada** |
+| **Teste** | `npm run test` | Bot para testes e debug |
 
-## 🛠 Instalação
+> 🚀 **Recomendado**: Use `npm run commercial:v2` para a versão mais recente e otimizada!
 
-### Pré-requisitos
-- Node.js 16 ou superior
-- NPM ou Yarn
-- WhatsApp instalado no celular
+## 🛠 Instalação Rápida
 
-### Passos
-
-1. **Clone o repositório:**
 ```bash
+# 1. Clone o repositório
 git clone https://github.com/lucasteixeirati/chatbot-whatsapp-seguro.git
 cd chatbot-whatsapp-seguro
-```
 
-2. **Instale as dependências:**
-```bash
+# 2. Instale dependências
 npm install
-```
 
-3. **Execute o bot:**
-```bash
-# Versão básica
-npm start
-
-# OU versão comercial (recomendado)
+# 3. Execute (recomendado: versão comercial)
 npm run commercial
+
+# 4. Escaneie o QR Code no terminal
 ```
 
-4. **Escaneie o QR Code** que aparecerá no terminal
-
-## 💬 Como Usar
-
-### Comandos da Versão Básica
-- `oi` / `olá` - Saudação inicial
-- `menu` - Exibe opções
-- `dia` / `tarde` / `noite` - Saudações por período
-
-### Menu da Versão Comercial
-
-**Demonstrações Profissionais:**
-- 🦷 `5` - Dentista (Dr. Carlos Silva)
-- 👩⚕️ `6` - Médico (Dra. Ana Costa)
-- ⚖️ `7` - Advogado (Dr. Roberto Lima)
-- 🧠 `8` - Psicólogo (Dra. Maria Santos)
-- 🏃♂️ `9` - Fisioterapeuta (Dr. João Oliveira)
-- 🏗️ `0` - Engenheiro (Eng. Pedro Almeida)
+## 💬 Menu da Versão Comercial
 
 **Opções Gerais:**
-- `1` - Ver catálogo de produtos
-- `2` - Fazer pedido
-- `3` - Suporte técnico
-- `4` - Falar com atendente humano
-- `contato` - Informações de contato
-- `!stats` - Estatísticas do bot
+- `1` - Nossos Produtos
+- `2` - Fazer Pedido  
+- `3` - Suporte
+
+**Demonstrações Profissionais:**
+- `4` - 🦷 Dentista (Dr. Carlos Silva)
+- `5` - 👩⚕️ Médico (Dra. Ana Costa)
+- `6` - ⚖️ Advogado (Dr. Roberto Lima)
+- `7` - 🧠 Psicólogo (Dra. Maria Santos)
+- `8` - 🏃♂️ Fisioterapeuta (Dr. João Oliveira)
+- `9` - 🏗️ Engenheiro (Eng. Pedro Almeida)
+
+**Valores:**
+- `0` - 💰 Valores Bot WhatsApp (3 planos disponíveis)
 
 ## 💼 Funcionalidades Comerciais
 
 ### Demonstrações Profissionais
-- 📸 **Cartões visuais** com imagem + informações
-- 🦷 **6 profissões** pré-configuradas
-- 📞 **Dados completos** (CRM, endereço, contatos)
-- 💰 **Lista de serviços** com preços
-- 🕰️ **Horários de funcionamento**
-- 📱 **Call-to-action** para agendamento
+- 📸 **Cartões visuais** com imagem + informações completas
+- 📞 **Dados de contato** (CRM, endereço, telefones)
+- 💰 **Lista de serviços** com preços atualizados
+- 🕰️ **Horários de funcionamento** detalhados
 
-### Sistema de Leads
+### Sistema de Leads & Analytics
 - **Captura automática** de dados do cliente
-- **Histórico completo** de interações
 - **Classificação** por engajamento (cold/warm/hot)
-- **Status de conversão** em tempo real
-
-### Analytics e Métricas
-- 📈 **Total de mensagens** processadas
-- 👥 **Número de leads** capturados
-- 💰 **Taxa de conversão** calculada
-- 📊 **Relatórios detalhados** de performance
-
-### Catálogo de Produtos
-- 🛍️ **Apresentação automática** de produtos
-- 💰 **Preços atualizados**
-- 📝 **Descrições detalhadas**
-- 🛒 **Processo de pedido** guiado
+- **Métricas em tempo real** (mensagens, leads, conversões)
+- **Comando `!stats`** para estatísticas instantâneas
 
 ## 📁 Estrutura do Projeto
 
 ```
 chatbot-whatsapp-seguro/
-├── robo.js                 # Bot básico
-├── bot-comercial.js        # Bot comercial completo
-├── bot-teste.js            # Bot para testes
-├── assets/
-│   └── images/             # Imagens dos profissionais
-│       ├── dentista.jpg
-│       ├── medico.jpg
-│       ├── advogado.jpg
-│       ├── psicologo.jpg
-│       ├── fisioterapeuta.jpg
-│       └── engenheiro.jpg
-├── config/
-│   └── business.js         # Configurações comerciais
-├── src/
+├── src/                    # Módulos principais
+│   ├── handlers/           # Gerenciadores de ações
+│   │   ├── MessageHandler.js   # Handler principal
+│   │   ├── MenuHandler.js      # Gerenciamento de menu
+│   │   └── ProfessionalHandler.js # Demonstrações
+│   ├── services/           # Serviços auxiliares
+│   │   └── ImageService.js     # Gerenciamento de imagens
+│   ├── models/             # Modelos de dados
+│   │   └── Professional.js     # Modelo de profissional
+│   ├── utils/              # Utilitários
+│   │   └── Logger.js           # Sistema de logs
+│   ├── analytics.js        # Analytics avançado
 │   ├── leadManager.js      # Gestão de leads
-│   ├── commercialResponses.js # Respostas comerciais
-│   └── analytics.js        # Sistema de métricas
-├── database/
-│   └── analytics.json      # Dados de analytics
-├── package.json            # Dependências e scripts
-├── .gitignore             # Arquivos ignorados
-└── README.md              # Esta documentação
+│   └── commercialResponses.js # Respostas comerciais
+├── config/                 # Configurações
+│   ├── business.js         # Config comerciais
+│   └── data/               # Dados estruturados
+│       ├── professionals.json  # Dados dos profissionais
+│       └── menu.json           # Estrutura do menu
+├── assets/images/          # Imagens dos profissionais
+├── database/               # Dados de analytics
+├── bot-comercial.js        # Bot original
+├── bot-comercial-v2.js     # **Nova versão modular**
+├── bot-teste.js            # Bot para testes
+└── robo.js                 # Bot básico
 ```
 
-## 🚀 Expansão Comercial
+## 🎯 Casos de Uso
 
-### Próximos Passos para Escalar
-
-**1. Integrações de Pagamento:**
-- 💳 Stripe, PagSeguro, Mercado Pago
-- 🏦 PIX automático
-- 💰 Checkout integrado
-
-**2. CRM e Automação:**
-- 📊 HubSpot, Pipedrive, RD Station
-- 📧 Email marketing automático
-- 🎯 Segmentação avançada
-
-**3. IA e Machine Learning:**
-- 🤖 Processamento de linguagem natural
-- 🎯 Recomendações personalizadas
-- 📈 Previsão de vendas
-
-## 🔒 Segurança
-
-- ✅ **Validação rigorosa** de entrada
-- ✅ **Sanitização** de dados
-- ✅ **Tratamento de erros** robusto
-- ✅ **Dependências atualizadas**
-- ✅ **Logs de segurança** detalhados
-- ✅ **Autenticação local** segura
-
-## 📊 Comandos Úteis
-
-```bash
-# Executar versão básica
-npm start
-
-# Executar versão comercial (recomendado)
-npm run commercial
-
-# Executar bot de teste
-node bot-teste.js
-
-# Gerar relatório de performance
-npm run report
-
-# Ver estatísticas em tempo real
-# (envie !stats no WhatsApp)
-
-# Instalar dependências
-npm install
-
-# Verificar vulnerabilidades
-npm audit
-```
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
-5. Abra um Pull Request
-
-## ⚠️ Avisos Importantes
-
-- 🔐 **Nunca compartilhe credenciais** em repositórios públicos
-- 🔄 **Mantenha dependências atualizadas** regularmente
-- 🛡️ **Use em ambiente seguro** para produção
-- 📱 **Respeite os Termos de Uso** do WhatsApp
-- 💼 **Teste em ambiente de desenvolvimento** antes de usar comercialmente
-
-## 📈 Performance
-
-- ⚡ **Resposta rápida** (< 2 segundos)
-- 🔄 **Processamento assíncrono**
-- 💾 **Baixo uso de memória**
-- 📊 **Métricas em tempo real**
-- 🛡️ **Tratamento de erros** robusto
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-## 🎯 Resultados Esperados
-
-### Para Profissionais Autônomos:
-- 📈 **Aumento de 300%** na captura de leads
-- 💰 **Conversão de 15-25%** em agendamentos
-- ⏱️ **Redução de 80%** no tempo de atendimento inicial
-- 🤖 **Automação de 90%** das consultas básicas
-- 📱 **Atendimento 24/7** sem intervenção manual
-
-### Profissões Atendidas:
+**Para Profissionais Autônomos:**
 - 🦷 **Dentistas** - Agendamentos e informações
-- 👩⚕️ **Médicos** - Consultas e telemedicina
-- ⚖️ **Advogados** - Consultorias e processos
+- 👩⚕️ **Médicos** - Consultas e telemedicina  
+- ⚖️ **Advogados** - Consultorias jurídicas
 - 🧠 **Psicólogos** - Terapias e atendimentos
 - 🏃♂️ **Fisioterapeutas** - Sessões e tratamentos
 - 🏗️ **Engenheiros** - Projetos e consultorias
 
-*Se este projeto foi útil, considere dar uma ⭐!*
+## 📊 Comandos Úteis
+
+```bash
+# Executar versões
+npm start              # Básica
+npm run commercial     # Comercial original
+npm run commercial:v2  # 🎆 Nova versão modular (recomendado)
+npm run test          # Teste
+
+# Relatórios e stats
+npm run report         # Relatório de performance
+# !stats no WhatsApp   # Estatísticas em tempo real
+
+# Manutenção
+npm install           # Instalar dependências
+npm audit            # Verificar vulnerabilidades
+npm run validate     # Validar estrutura
+```
+
+## 🔒 Segurança
+
+- ✅ **Validação rigorosa** de entrada com sanitização
+- ✅ **Tratamento de erros** robusto e logs detalhados
+- ✅ **Autenticação local** segura e persistente
+- ✅ **Dependências atualizadas** sem vulnerabilidades
+
+## 🚀 Deploy em Produção
+
+**Opções de Hospedagem:**
+- **VPS/Cloud**: AWS EC2, DigitalOcean, Google Cloud
+- **Serverless**: Heroku, Railway, Render
+- **Containers**: Docker + Kubernetes
+
+**Modelos de Negócio:**
+- 💰 **SaaS Hospedado**: R$ 97-397/mês (você hospeda)
+- 🏠 **Self-Hosted**: R$ 1.997 + setup (cliente hospeda)
+
+## 📈 Resultados Esperados
+
+- 📈 **300% mais leads** capturados automaticamente
+- 💰 **15-25% conversão** em agendamentos/vendas
+- ⏱️ **80% menos tempo** de atendimento inicial
+- 🤖 **90% automação** das consultas básicas
+- 📱 **Atendimento 24/7** sem intervenção manual
+
+## 🤝 Contribuição & Licença
+
+Contribuições são bem-vindas! Este projeto está sob licença MIT.
 
 **Desenvolvido por Lucas Teixeira** | [GitHub](https://github.com/lucasteixeirati)
+
+---
+
+*Se este projeto foi útil, considere dar uma ⭐!*

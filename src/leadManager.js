@@ -7,6 +7,10 @@ class LeadManager {
 
     // Captura lead
     captureLead(phoneNumber, name, source = 'whatsapp') {
+        if (this.leads.has(phoneNumber)) {
+            return this.leads.get(phoneNumber);
+        }
+
         const lead = {
             id: Date.now().toString(),
             phoneNumber,
@@ -14,11 +18,23 @@ class LeadManager {
             source,
             status: 'new',
             createdAt: new Date(),
-            interactions: []
+            interactions: [],
+            lastInteraction: new Date()
         };
         
         this.leads.set(phoneNumber, lead);
+        console.log(`🆕 Novo lead capturado: ${name} (${phoneNumber})`);
         return lead;
+    }
+
+    // Verifica se lead existe
+    hasLead(phoneNumber) {
+        return this.leads.has(phoneNumber);
+    }
+
+    // Obtém lead
+    getLead(phoneNumber) {
+        return this.leads.get(phoneNumber);
     }
 
     // Atualiza status do lead
