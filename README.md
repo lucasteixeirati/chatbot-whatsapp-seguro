@@ -159,8 +159,6 @@ npm run validate     # Validar estrutura
 
 Contribuições são bem-vindas! Este projeto está sob licença MIT.
 
-**Desenvolvido por Lucas Teixeira** | [GitHub](https://github.com/lucasteixeirati)
-
 ---
 
 *Se este projeto foi útil, considere dar uma ⭐!*
